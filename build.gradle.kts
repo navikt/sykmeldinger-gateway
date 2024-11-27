@@ -5,6 +5,8 @@ plugins {
 	id("io.spring.dependency-management") version "1.1.6"
 }
 
+val logbacksyslog4jVersion = "1.0.0"
+
 group = "com.example"
 version = "0.0.1-SNAPSHOT"
 
@@ -22,6 +24,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("com.papertrailapp:logback-syslog4j:$logbacksyslog4jVersion")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
