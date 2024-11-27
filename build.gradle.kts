@@ -6,6 +6,7 @@ plugins {
 }
 
 val logbacksyslog4jVersion = "1.0.0"
+val logstashLogbackEncoderVersion = "8.0"
 
 group = "com.example"
 version = "0.0.1-SNAPSHOT"
@@ -25,6 +26,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.papertrailapp:logback-syslog4j:$logbacksyslog4jVersion")
+	implementation("net.logstash.logback:logstash-logback-encoder:$logstashLogbackEncoderVersion")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
