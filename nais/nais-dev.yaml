@@ -14,11 +14,11 @@ spec:
     cpuThresholdPercentage: 90
   port: 8080
   liveness:
-    path: /internal/isAlive
+    path: /internal/health
   readiness:
-    path: /internal/isAlive
+    path: /internal/health
   startup:
-    path: /internal/isAlive
+    path: /internal/health
     initialDelay: 60
   prometheus:
     enabled: true
