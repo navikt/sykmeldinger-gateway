@@ -1,3 +1,5 @@
+apiVersion: "nais.io/v1alpha1"
+kind: "Application"
 spring:
   application:
     name: sykmeldinger-gateway
@@ -16,12 +18,11 @@ spring:
       sykmeldinger-output: tsm.tsm-sykmeldinger
 management:
   endpoint:
-    prometheus.enabled: true
     health.probes.enabled: true
     health.show-details: always
   endpoints.web:
     base-path: "/internal"
-    exposure.include: health, prometheus
+    exposure.include: health, prometheus, mappings
   health:
     livenessstate.enabled: true
     readinessState.enabled: true
