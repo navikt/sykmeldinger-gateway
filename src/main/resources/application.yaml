@@ -18,7 +18,6 @@ spring:
       sykmeldinger-output: tsm.tsm-sykmeldinger
 management:
   endpoint:
-    prometheus.enabled: true
     health.probes.enabled: true
     health.show-details: always
   endpoints.web:

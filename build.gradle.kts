@@ -27,6 +27,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("com.papertrailapp:logback-syslog4j:$logbacksyslog4jVersion")
 	implementation("net.logstash.logback:logstash-logback-encoder:$logstashLogbackEncoderVersion")
 	implementation("org.jetbrains.kotlinx:kotlinx-html-jvm:$kotlinxVersion")
