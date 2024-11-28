@@ -1,3 +1,5 @@
+package no.nav.sykmeldinger.controllers
+
 import kotlinx.html.*
 import kotlinx.html.stream.createHTML
 

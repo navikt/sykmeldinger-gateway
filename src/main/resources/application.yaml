@@ -22,7 +22,7 @@ management:
     health.show-details: always
   endpoints.web:
     base-path: "/internal"
-    exposure.include: health, prometheus
+    exposure.include: health, prometheus, mappings
   health:
     livenessstate.enabled: true
     readinessState.enabled: true
